@@ -18,6 +18,10 @@ android {
         }
     }
 
+    dataBinding{
+        true
+    }
+
 }
 apply plugin: 'android-apt'
 dependencies {
