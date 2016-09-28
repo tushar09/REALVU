@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RealVU</string>
+    <string name="title_activity_customer_sheba">CustomerSheba</string>
+    <string name="title_activity_vromon_poricolpona">VromonPoricolpona</string>
+    <string name="title_activity_regestrationer_onurodh">RegestrationerOnurodh</string>
+    <string name="title_activity_check_stock">CheckStock</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_service_log">ServiceLog</string>
+</resources>

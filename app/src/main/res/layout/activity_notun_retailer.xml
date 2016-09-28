@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#99000000">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Notun Retailer"
+            android:id="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="@drawable/boxed_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Thikana"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/editText"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="@drawable/boxed_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/textView14"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignEnd="@+id/editText" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Phone"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2" />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:background="@drawable/boxed_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/textView15"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <ImageButton
+            android:background="@drawable/cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageButton3"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignEnd="@+id/editText" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Map"
+            android:id="@+id/textView22"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView22"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:background="@drawable/camera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageButton4"
+            android:layout_below="@+id/mapview"
+            android:layout_alignRight="@+id/imageButton3"
+            android:layout_alignEnd="@+id/imageButton3" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/imageButton4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/imageButton4"
+            android:layout_toLeftOf="@+id/imageButton4"
+            android:layout_toStartOf="@+id/imageButton4"
+            android:id="@+id/linearLayout">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:background="@android:color/transparent"
+            android:id="@+id/button3"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
